@@ -3,11 +3,14 @@
 }
 .content{
     display: flex;
+    width: 100%;
+    margin: auto;
 }
 .blok1{
-    background-image: url(../img/Image1.png);
+    background-image: url(../img/Image1.png);no-repeat;
     width: 100%;
     height: 500px;
+    background-size: 100% 100%;
     color: white;
 }
 .block{
@@ -15,7 +18,7 @@
 }
 .head{
     font-size: 12pt;
-    font-family: cursive;
+    font-family: 'Josefin Sans';
 }
 h1{
     display: flex;
@@ -29,28 +32,90 @@ form{
     position: relative;
     width: 400px;
     margin: 0 auto;
+    margin-top: 20px;
 }
-.button{
-    padding-left: 10px;
+
+.textsearch{
+    width: 300px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+.buttonsearch{
+    /* padding-left: 10px;
     border: 2px solid #7BA7AB;
     outline: none;
     background: #F9F0DA;
-    color: #9E9C9C;
-    
-}
-.text{
-    width: 300px;
+    color: #9E9C9C; */
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    /* background-image: url(../SVG/search.svg); no-repeat;
+    background-size: 100% 100%; */
 }
 .list{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: teal;
+    background-color: rgb(84, 116, 253);
     align-items: flex-end;
+    position: absolute;
+    top: 23.3em;
+    width: 100%;
 }
 .menu{
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-items: end;
+}
+.header{
+    position: relative;
+    top: 100px;
+
+}
+.menu > li{
+    margin-left: 30px;
+}
+
+.block2{
+    background-image: url(../img/Rectangle\ .png);  no-repeat;
+    width: 100%;
+    height: 660px;
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.text, .image{
+    margin: auto;
+}
+.text> input{
+    background-color: rgb(84, 116, 253);
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    border: none;
+}
+.text > h2{
+    margin-bottom: 20px;
+}
+.image{
+    width: 400px;
+    /* height: 600px; */
+}
+.image > :nth-child(2){
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }

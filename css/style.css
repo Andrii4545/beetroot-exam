@@ -339,4 +339,7 @@ form{
     #image2{
         position: sticky;
     }
+    form{
+        width: 325px;
+    }
 }

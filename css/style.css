@@ -407,7 +407,7 @@ text-decoration: none;
     .bodyblock6{
         flex-direction: column;
         align-items: center;
-        width: 400px;
+        width: 350px;
     }
     .list{
         height: 50px;
@@ -465,7 +465,7 @@ text-decoration: none;
         font-size: 11px;
     }
     .imgblock6{
-        width: 249px;
+        width: 222px;
         height: 255px;
     }
     .topnav a:not(:first-child) {display: none;}

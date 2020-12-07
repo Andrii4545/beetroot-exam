@@ -329,10 +329,14 @@ form{
     }
     .block2{
         flex-direction: column;
+        height: 860px;
     }
     .icon{
         margin: 15px;
         border: dashed rgb(73, 73, 73);
         border-radius: 10%;
+    }
+    #image2{
+        position: sticky;
     }
 }

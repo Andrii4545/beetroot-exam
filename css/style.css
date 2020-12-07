@@ -340,6 +340,14 @@ form{
         position: sticky;
     }
     form{
-        width: 325px;
+        width: 270px;
+    }
+    .textsearch{
+        width: 70%;
+        font-size: 11px;
+    }
+    .buttonsearch{
+        width: 30%;
+        font-size: 11px;
     }
 }

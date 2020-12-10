@@ -449,6 +449,12 @@ text-decoration: none;
     .topnav{
         display: none;
     }
+    .imgblock6{
+        height: 310px;
+    }
+    .iconflex1 {
+        width: 580px;
+    }
 }
 @media (max-width:765px){
     .list{

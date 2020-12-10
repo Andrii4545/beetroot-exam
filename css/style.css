@@ -25,6 +25,14 @@ h1{
     flex-direction: column;
     align-items: center;
 }
+.list>a{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out .4s;
+}
+.list>a:hover{
+    transform: scale(1.15);
+}
 form{
     /* display: flex;
     justify-content: center; */
@@ -279,10 +287,12 @@ form{
 .footertext> p{
     font-size: 15pt;
 }
-.footertext> h3{
+.footertext> a{
     font-size: 20pt;
     position: relative;
     left: 25px;
+    text-decoration: none;
+    color: white;
 }
 
 .footericon> ul{
@@ -343,6 +353,14 @@ text-decoration: none;
 .topnav .icon {
     display: none;
   }
+@media (max-width:3300px){
+    .overlay{
+        display: none;
+    }
+    span{
+        display: none;
+    }
+}
 @media (max-width:1200px){
     .iconflex1{
         width: 1100px;
@@ -355,6 +373,22 @@ text-decoration: none;
         position: relative;
         left: 10px;
     }
+    /* .overlay-content{
+        z-index: 10;
+    }
+    .overlay{
+        z-index: 10;
+    }
+    #gridsearch1, #check1, #like21 {
+        z-index: auto;
+    }
+    span{
+        display: block;
+    } 
+    .topnav{
+        display: none;
+    } */
+    
 }
 @media (max-width:1199px){
     .iconflex1{
@@ -390,6 +424,7 @@ text-decoration: none;
         border: dashed rgb(73, 73, 73);
         border-radius: 10%;
     }
+    
 }
 @media (max-width:820px){
     #gridsearch1{
@@ -397,11 +432,30 @@ text-decoration: none;
     }
     #like21{
         position: sticky; 
+    }  
+    .overlay{
+        display: block;
+        z-index: 10;
+    }
+    .overlay-content{
+        z-index: 10;
+    }
+    #gridsearch1, #check1, #like21 {
+        z-index: auto;
+    }
+    span{
+        display: block;
+    } 
+    .topnav{
+        display: none;
+    }
 }
 @media (max-width:765px){
     .list{
-        height: 99px;
+        height: 50px;
     }
+    
+
 }
 @media (max-width:600px){
     .bodyblock6{
@@ -488,3 +542,54 @@ text-decoration: none;
       text-align: left;
     }
   }
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: block;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+

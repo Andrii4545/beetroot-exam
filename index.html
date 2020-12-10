@@ -14,6 +14,7 @@
         <div class="blok1">
             <div class="block">
                 <div class="header">
+                    <a name="header"></a>
                     <h1> BHROAMON <p class="head">Safe Travel Anywhere</p>
                     </h1>
                     <div class="form">
@@ -23,51 +24,49 @@
                             <input class="buttonsearch" type="submit" name="search" value="search">
                         </form>
                     </div>
-
                     <div class="list">
-                        <h2>BHROAMON</h2>
-                        <!-- <ul class="menu">
-                            <li>
-                                <p>Who We Are</p>
-                            </li>
-                            <li>
-                                <p>What We Do</p>
-                            </li>
-                            <li>
-                                <p>Travel With Us</p>
-                            </li>
-                            <li>
-                                <p>Contact Us</p>
-                            </li>
-                        </ul> -->
+                        <a href="#footer" ><h2>BHROAMON</h2></a>
+    
                         <div class="topnav" id="myTopnav">
-                            <a href="#home" class="active"></a>
-                            <a href="#news">Who We Are</a>
-                            <a href="#news">What We Do</a>
-                            <a href="#contact">Contact</a>
-                            <a href="#about">Travel With Us</a>
-                            <a href="#contact">Contact Us</a>
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i>
-                            </a>
+                            
+                            <a href="#block2">Who We Are</a>
+                            <a href="#block3">What We Do</a>
+                            <a href="#block4">Contact</a>
+                            <a href="#block5">Travel With Us</a>
+                            <a href="#footer">Contact Us</a>
+                            
                         </div>
-                        <script>
-                            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-                            function myFunction() {
-                                var x = document.getElementById("myTopnav");
-                                if (x.className === "topnav") {
-                                    x.className += " responsive";
-                                } else {
-                                    x.className = "topnav";
-                                }
-                            }
-                        </script>
+                   
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <!-- <a href="#home" class="active"></a> -->
+                                <a href="#block2">Who We Are</a>
+                                <a href="#block3">What We Do</a>
+                                <a href="#block4">Contact</a>
+                                <a href="#block5">Travel With Us</a>
+                                <a href="#footer">Contact Us</a>
+                              
+                            </div>
+                        </div>
+                          
+                          
+                          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                          
+                          <script>
+                          function openNav() {
+                            document.getElementById("myNav").style.width = "100%";
+                          }
+                          
+                          function closeNav() {
+                            document.getElementById("myNav").style.width = "0%";
+                          }
+                          </script>                           
                     </div>
                 </div>
             </div>
-
             <div class="block2">
-
+                <a name="block2"></a>
                 <div class="text">
                     <h2> Why Choose Us</h2>
                     <p>
@@ -89,7 +88,7 @@
             </div>
 
             <div class="block3">
-
+                <a name="block3"></a>
                 <div class="lin1">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="776px"
                         height="97px">
@@ -98,7 +97,6 @@
                             d="M1.500,95.500 C1.500,95.500 193.977,-116.958 394.559,95.500 C394.559,95.500 570.827,-118.254 778.500,95.500 " />
                     </svg>
                 </div>
-
                 <div class="iconflex1">
                     <div id="gridsearch1" class="iconbox">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -111,8 +109,6 @@
                         </svg>
                         <p class="gridtext">Search Places</p>
                     </div>
-
-
                     <div id="check1" class="iconbox">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             width="40" height="40" viewBox="0 0 32 32">
@@ -141,11 +137,9 @@
                     </div>
 
                 </div>
-
-
-
             </div>
             <div class="block4">
+                <a name="block4"></a>
                 <div class="blocktext">
                     <p class="spain">Spain</p>
                     <p class="grand">Grand Spain Madrid</p>
@@ -156,8 +150,8 @@
                     <a href=""> <input type="button" value="Book Now" class="buttonblock4"></a>
                 </div>
             </div>
-
             <div class="block5">
+                <a name="block5"></a>
                 <div class="blocktext">
                     <p class="spain">Spain</p>
                     <p class="grand">Grand Spain Madrid</p>
@@ -168,8 +162,8 @@
                     <a href=""> <input type="button" value="Book Now" class="buttonblock4"></a>
                 </div>
             </div>
-
             <div class="block6">
+                <a name="block6"></a>
                 <div class="header6">
                     <h2>What Our Tourist Say</h2>
                 </div>
@@ -200,12 +194,11 @@
                         </p>
                     </div>
                 </div>
-
             </div>
-
             <div class="footer">
+                <a name="footer"></a>
                 <div class="footertext">
-                    <h3>Bhromaon</h3>
+                    <a href="#header"><h3>Bhromaon</h3></a>
                     <p>Safe Travel Anywhere</p>
                 </div>
                 <div class="footericon">
